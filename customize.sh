@@ -13,3 +13,7 @@
 
 #3. Replace with JerryKuKu’s Argon
 #rm openwrt/package/lean/luci-theme-argon -rf
+
+#复制内核5.10版本CPU超频补丁
+#cp extra-files/322-mt7621-fix-cpu-clk-add-clkdev.patch target/linux/ramips/patches-5.10/
+
