@@ -1,2 +1,3 @@
 # build说明
-现在不需要新建Release了，已经更改了脚本，直接fork，修改好之后，点击右上角的 Star 星星按钮即可开始自动编译（自己点击才会编译）。
+编译项目来源 https://github.com/padavanonly/immortalwrt
+编译机型 ramips-mt7621-xiaomi_mi-router-3g
