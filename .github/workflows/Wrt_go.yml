@@ -67,7 +67,7 @@ jobs:
         #echo "src-git ssrp https://github.com/fw876/helloworld.git" >> ./feeds.conf.default
     #- name: Update & Install feeds
       working-directory: ./openwrt
-      run: |
+      run: 
         ./scripts/feeds update -a
         ./scripts/feeds install -a
         ./scripts/feeds install -a
