@@ -79,10 +79,10 @@ jobs:
   
     - name: Configuration Customization - AutoBuild-Wrt
       env:
-        CONFIG_FILE: 'mi_r3g_noip6.config'
+        CONFIG_FILE: 'mi_r3g.config'
       run: |
         [ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
-        chmod +x ./customize_noip6.sh && ./customize_noip6.sh
+        chmod +x ./customize.sh && ./customize.sh
         cd openwrt && make defconfig
         
     - name: Download package
