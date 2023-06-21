@@ -88,14 +88,14 @@ jobs:
     - name: Download package
       working-directory: ./openwrt
       run: |
-        make download -j$(nproc)
+        make download -j8
         find dl -size -1024c -exec ls -l {} \;
         find dl -size -1024c -exec rm -f {} \;
     - name: Build firmware
       working-directory: ./openwrt
       run: |
         echo -e "$(nproc) thread build."
-        make -j$(nproc) V=s
+        make -j1 V=s
     - name : Upload artifact
       uses: actions/upload-artifact@master
       with:
