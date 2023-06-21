@@ -9,8 +9,8 @@ sed -i 's/192.168.1.1/192.168.2.1/g' openwrt/package/base-files/files/bin/config
 cp extra-files/mac80211.sh openwrt/package/kernel/mac80211/files/lib/wifi/mac80211.sh
 
 #3. 删除IPV6及相关配置防止编译报错
-#cp extra-files/firewall/makefile openwrt/package/network/config/firewall/makefile
-#cp extra-files/iptables/makefile openwrt/package/network/utils/iptables/makefile
+cp extra-files/firewall/Makefile openwrt/package/network/config/firewall/
+cp extra-files/iptables/Makefile openwrt/package/network/utils/iptables/
 
 #如需更改频率，请自行修改超频补丁第120行，1000Mhz=0x312 1100Mhz=0x362 1120Mhz=0x372 1200Mhz=0x3B2
 #复制内核5.10版本CPU超频补丁，如使用默频，将下方命令注释掉。
